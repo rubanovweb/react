@@ -1,0 +1,13 @@
+footer {
+	padding: 20px 0;
+}
+
+footer .Logo {
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+footer .copyright {
+	margin-bottom: 0;
+}

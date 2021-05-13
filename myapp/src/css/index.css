@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "Beer Money";
+	src: url("../fonts/beer-money.ttf") format("truetype");
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Verdana", sans-serif;
+	color: white;
+}
+
+header,
+footer {
+	background-color: rgb(61, 61, 61);
+}
+
+section {
+	min-height: 100vh;
+}
+
+.hidden {
+	display: none;
+}

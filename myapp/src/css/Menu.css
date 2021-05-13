@@ -1,0 +1,22 @@
+.Menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	list-style-type: none;
+	width: 100%;
+
+	padding: 0;
+	margin: 0;
+}
+
+.Menu a {
+	color: white;
+	font-family: "Beer Money", decorative;
+	font-size: 1.5rem;
+}
+
+.Menu a:hover {
+	color: rgb(245, 186, 78);
+	text-decoration: none;
+}
