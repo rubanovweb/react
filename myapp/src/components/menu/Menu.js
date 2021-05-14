@@ -9,10 +9,6 @@ function Menu() {
     <ItemMenu item={elem} key={elem.id} />
   ));
 
-  // const menuItems = dataMenu.map(function (elem) {
-  // 	return <ItemMenu item={elem} key={elem.id}/>
-  // });
-
   return <ul className="Menu">{menuItems}</ul>;
 }
 

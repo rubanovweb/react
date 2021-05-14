@@ -12,8 +12,8 @@
 
 .Menu a {
 	color: white;
-	font-family: "Beer Money", decorative;
 	font-size: 1.5rem;
+	transition: all 0.25s;
 }
 
 .Menu a:hover {

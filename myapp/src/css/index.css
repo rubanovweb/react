@@ -3,13 +3,17 @@
 	src: url("../fonts/beer-money.ttf") format("truetype");
 }
 
+:focus {
+	outline-color: gold;
+}
+
 html {
 	font-size: 16px;
 	scroll-behavior: smooth;
 }
 
 body {
-	font-family: "Verdana", sans-serif;
+	font-family: "Beer Money", decorative;
 	color: white;
 }
 
@@ -20,6 +24,18 @@ footer {
 
 section {
 	min-height: 100vh;
+}
+
+p {
+	font-family: "Georgia", serif;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-family: "Russo One", sans-serif;
+	font-size: 1.5rem;
 }
 
 .hidden {
