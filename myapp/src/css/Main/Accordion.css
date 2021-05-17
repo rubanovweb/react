@@ -1,0 +1,48 @@
+.accordion {
+	padding: 20px 15px;
+	background-color: rgb(66, 122, 173);
+}
+
+.accordion-item {
+	background-color: transparent;
+	margin-bottom: 10px;
+}
+
+.accordion-item:last-child {
+	margin-bottom: 0;
+}
+
+.accordion-header {
+	margin: 0;
+	background-color: transparent;
+}
+
+.accordion-button {
+	width: 100%;
+	padding: 10px;
+	padding-left: 20px;
+
+	font-size: 1.75rem;
+	text-align: left;
+	text-transform: uppercase;
+	color: rgb(10, 11, 14);
+	border: none;
+	border-bottom: 2px dotted rgb(105, 105, 107);
+	background-color: transparent;
+	background-image: linear-gradient(0deg, #e0ebfca2 0%, #d5eefcb4 100%);
+}
+
+.accordion-item:last-child .accordion-button {
+	border-bottom: none;
+}
+
+.accordion-body {
+	padding: 20px;
+	font-family: "Georgia", serif;
+	font-size: 1.25rem;
+}
+
+.accordion-body::first-letter {
+	font-size: 2rem;
+	color: gold;
+}
