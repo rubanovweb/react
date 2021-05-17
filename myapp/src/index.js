@@ -21,6 +21,11 @@ document.querySelector(".ArrowTop").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
+// document.querySelector("[href='#blog']").addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.scrollTo(0, document.getElementById("catalog").offsetHeight);
+// });
+
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 300) {
     document.querySelector(".ArrowTop").classList.add("animate__zoomIn");

@@ -1,9 +1,16 @@
 import React, { Component } from "react";
 
 class AccordionItem extends Component {
-  constructor() {
-    super();
-    this.name = "item";
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpened: props.item.isOpened,
+      classShow: "",
+    };
+
+    if (this.state.isOpened) {
+      this.state.classShow = "show";
+    }
   }
 
   render() {
@@ -23,11 +30,11 @@ class AccordionItem extends Component {
         </h2>
         <div
           id={"collapse" + this.props.item.id}
-          class="accordion-collapse collapse"
+          className={"accordion-collapse collapse " + this.state.classShow}
           aria-labelledby={this.props.item.headerId}
           data-bs-parent="#accordFaq"
         >
-          <div class="accordion-body">{this.props.item.answer}</div>
+          <div className="accordion-body">{this.props.item.answer}</div>
         </div>
       </div>
     );

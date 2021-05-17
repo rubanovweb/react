@@ -1,11 +1,12 @@
 .accordion {
-	padding: 20px 15px;
+	margin-top: 1rem;
+	padding: 30px 25px;
+	border-radius: 15px;
 	background-color: rgb(66, 122, 173);
 }
 
 .accordion-item {
-	background-color: transparent;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .accordion-item:last-child {
@@ -14,7 +15,11 @@
 
 .accordion-header {
 	margin: 0;
-	background-color: transparent;
+	transition: all 0.25s;
+}
+
+.accordion-header:hover {
+	background-color: gold;
 }
 
 .accordion-button {
@@ -27,22 +32,19 @@
 	text-transform: uppercase;
 	color: rgb(10, 11, 14);
 	border: none;
-	border-bottom: 2px dotted rgb(105, 105, 107);
 	background-color: transparent;
-	background-image: linear-gradient(0deg, #e0ebfca2 0%, #d5eefcb4 100%);
-}
-
-.accordion-item:last-child .accordion-button {
-	border-bottom: none;
+	background-image: linear-gradient(90deg, #ffffffa2 0%, #b9e3fdb4 100%);
+	box-shadow: 2px 2px 5px rgb(183, 203, 233);
 }
 
 .accordion-body {
 	padding: 20px;
 	font-family: "Georgia", serif;
 	font-size: 1.25rem;
+	text-align: justify;
 }
 
 .accordion-body::first-letter {
-	font-size: 2rem;
+	font-size: 2.25rem;
 	color: gold;
 }

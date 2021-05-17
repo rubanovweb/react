@@ -8,7 +8,7 @@ function Faq() {
     <section id="faq" className="Faq">
       <div className="container">
         <div className="row justify-content-center">
-          <h2 className="col-12 section-title">Частозадаваемые вопросы</h2>
+          <h2 className="col-12 section-title">Часто задаваемые вопросы</h2>
           <Accordion id="accordFaq" />
         </div>
       </div>

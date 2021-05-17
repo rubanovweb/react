@@ -3,6 +3,7 @@
 		radial-gradient(at top center, rgba(173, 173, 173, 0.4) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
 	background-blend-mode: multiply,
 		multiply;
+	min-height: auto;
 }
 
 .Faq .section-title {
