@@ -42,3 +42,57 @@ p {
 .hidden {
 	display: none;
 }
+
+.bg-shadow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+
+	background-color: rgba(0, 0, 0, 0.548);
+}
+
+.image-container {
+	position: relative;
+	width: 60%;
+}
+
+.original-image {
+	box-sizing: border-box;
+	width: 100%;
+	max-height: 75vh;
+	padding: 20px;
+	border: 20px ridge rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.815);
+}
+
+.btn-close {
+	position: absolute;
+	top: -25px;
+	right: -25px;
+	width: 50px;
+	height: 50px;
+
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgb(10, 94, 189),
+		inset 0 0 3px blue;
+	background-color: #fff;
+	background-image: url("../img/icon-close.svg");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	transition: all 0.25s;
+}
+
+.btn-close:hover {
+	box-shadow: 0 0 5px 2px gold;
+	filter: hue-rotate(200deg);
+}

@@ -6,7 +6,7 @@ import Menu from "./menu/Menu";
 
 function Header() {
   return (
-    <header>
+    <header id="header">
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-1 col-sm-2 col-xl-1">
