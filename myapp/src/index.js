@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./css/index.css";
+// import "./styles.less";
 
 import Header from "./components/Header";
 import Main from "./components/Main/Main";
@@ -38,7 +39,7 @@ for (let img of cardImages) {
     openOriginalImage(e.target);
 
     document.getElementById("btnClose").addEventListener("click", () => {
-      if (document.querySelector(".bg-shadow")) {
+      if (document.querySelector(".overlay")) {
         document
           .querySelector(".image-container")
           .classList.remove("animate__zoomIn");
@@ -46,7 +47,7 @@ for (let img of cardImages) {
           .querySelector(".image-container")
           .classList.add("animate__zoomOut");
         setTimeout(() => {
-          document.querySelector(".bg-shadow").remove();
+          document.querySelector(".overlay").remove();
         }, 500);
       }
     });
@@ -54,9 +55,9 @@ for (let img of cardImages) {
 }
 
 function openOriginalImage(img) {
-  const bgShadow = document.createElement("div");
-  bgShadow.classList.add("bg-shadow");
-  document.body.insertAdjacentElement("afterbegin", bgShadow);
+  const overlay = document.createElement("div");
+  overlay.classList.add("overlay");
+  document.body.insertAdjacentElement("afterbegin", overlay);
 
   const imgContainer = document.createElement("div");
   imgContainer.classList.add(
@@ -64,7 +65,7 @@ function openOriginalImage(img) {
     "animate__animated",
     "animate__zoomIn"
   );
-  bgShadow.prepend(imgContainer);
+  overlay.prepend(imgContainer);
 
   const originalImg = document.createElement("img");
   originalImg.src = img.src;
